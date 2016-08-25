@@ -1,0 +1,10 @@
+[
+ {
+  "title": "在讀寫檔案的筆記中加入「刪除含有特定字串的資料列」的範例",
+  "description": "我們有時會發現要讀的檔案中有想要先過濾掉的資料， 該如何用Python找到符合特定型式的字串，並刪掉含有該字串的那整個資料列?"
+ },
+ {
+  "title": "將astropython-notes專案中的notebooks合併到此專案中",
+  "description": "我之前在astropython-notes這repository建了一個「Python在天文研究上的應用之系列文章」的專案，裡面有給Python初學者的教學筆記(IPython notebooks)，我想將那些notebooks合併到此專案中，並藉由討論會中初學Python的成員所分享的學習經驗，來修改那些notebooks (以初學者的角度來看需要刪掉或增加哪些內容)。"
+ }
+]

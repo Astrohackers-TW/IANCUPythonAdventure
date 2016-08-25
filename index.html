@@ -1,1 +1,176 @@
-Hello World!
+<!DOCTYPE html>
+<html>
+<head>
+<title>IANCU Python Adventure</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/getdata.js"></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">IANCU Python Adventure</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" data-toggle="modal" data-target="#rulesModal"><span class="glyphicon glyphicon-info-sign"></span> 規則</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#joinModal"><span class="glyphicon glyphicon-user"></span> 加入冒險</a></li>
+          <li><a href="https://github.com/Astrohackers-TW/IANCUPythonAdventure" target="_blank"><span class="glyphicon glyphicon-log-in"></span> 登入</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- rulesModal -->
+  <div id="rulesModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">規則</h4>
+        </div>
+        <div class="modal-body">
+          <h5><strong>如何升級?</strong></h5>
+          <p>升級條件是依據各冒險者對於<a href="https://github.com/Astrohackers-TW/IANCUPythonAdventure" target="_blank">「中央大學天文所Python使用者討論會」GitHub專案</a>
+            的 commit 次數。等級1升到等級2需要 commit 4 次，等級2之後，每個等級間距所需的 commit 次數為2的 n 次方，n 為目前級數, 例如: 等級2到等級3需要再 commit 4 次、
+            3到4需要再 commit 8 次、4到5需要再 commit 16 次 ...</p>
+          <p>關於如何commit，請參閱此文件<a href="https://iancupythonmeetup.hackpad.com/GitGitHub-reO3AW7SzuR" target="_blank">「如何使用Git/GitHub協作討論會的筆記」</a>的說明。</p>
+          <h5><strong>如何解開技能?</strong></h5>
+          <ul>
+            <li>開源天文技能 (技能名稱 : 解開條件)
+              <ol>
+                <li>初等 : 針對<a href="https://github.com/Astrohackers-TW/IANCUPythonAdventure" target="_blank">「中央大學天文所Python使用者討論會」GitHub專案</a>
+                  commit 5次以上。</li>
+                <li>中等 : 先解開上一個技能，並且參與過一次討論會成員辦的天文駭客松(hackathon)。</li>
+                <li>高等 : 先解開上一個技能，並且在<a href="https://github.com/Astrohackers-TW" target="_blank">「Astrohackers in Taiwan」GitHub組織</a>中主導過一個新專案。</li>
+              </ol>
+            </li>
+            <li>戰鬥技能 (技能名稱 : 解開條件)
+              <ol>
+                <li>初等 : 到<a href="https://checkio.org/" target="_blank">CheckiO</a> 或 <a href="https://www.hackerrank.com/domains/python/py-introduction" target="_blank">HackerRank</a>
+                  這兩個Online Judge線上解題平台上找題目來做，並分享解題經驗給一同冒險的夥伴們3次以上。</li>
+                <li>中等 : 先解開上一個技能，並且分享Python物理數值分析相關題目(求根、線性代數、微分方程、數值微積分、統計...)的解題經驗給一同冒險的夥伴們5次以上。</li>
+                <li>高等 : 先解開上一個技能，並且自己出10題天文相關的Pyrhon題目給一同冒險的夥伴們解。</li>
+              </ol>
+              </lo>
+            </li>
+            <li>天問技能 (技能名稱 : 解開條件)
+              <ol>
+                <li>初等 : 在<a href="https://github.com/Astrohackers-TW/IANCUPythonAdventure/issues" target="_blank">「中央大學天文所Python使用者討論會」GitHub專案的issues頁面</a>
+                  上提交5次以上關於討論會筆記的改進提案。</li>
+                <li>中等 : 先解開上一個技能，並且</li>
+                <li>高等 : 先解開上一個技能，並且</li>
+              </ol>
+            </li>
+            <li>角色技能
+              <p>依據所屬研究領域，每位冒險者會被賦與一個角色，藉由分享天文研究相關Python套件的次數以解開所屬角色不同層級的技能。(以下所列次數是不含前一個技能的所需次數)</p>
+              <ul>
+                <li>死星守護者 (高能) : 初級 (1次) -> 中級 (3次) -> 高級 (5次)</li>
+                <li>西佛 (星系) : 音叉普照 (1次) -> 中級 (3次) -> 高級 (5次)</li>
+                <li>星胚孕育師 (紅外) : 初級 (1次) -> 中級 (3次) -> 高級 (5次)</li>
+                <li>模仿遊戲家 (天文物理) : 初級 (1次) -> 中級 (3次) -> 高級 (5次)</li>
+                <li>星際信使 (太陽系) : 初級 (1次) -> 中級 (3次) -> 高級 (5次)</li>
+                <li>造父門徒 (變星) : 初級 (1次) ->  中級 (3次) -> 高級 (5次)</li>
+              </ul>
+
+            </li>
+          </ul>
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+        </div>
+      </div>
+      <!-- end Modal content -->
+    </div>
+  </div>
+  <!-- end rulesModal -->
+
+  <!-- joinModal -->
+  <div id="joinModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">如何開始與我們一同冒險?</h4>
+        </div>
+        <div class="modal-body">
+          <h5><strong>請完成以下加入冒險的步驟:</strong></h5>
+          <ol>
+            <li>註冊一個<a href="https://github.com/" target="_blank">GitHub帳號</a></li>
+            <li>到<a href="https://github.com/Astrohackers-TW/IANCUPythonAdventure/issues" target="_blank">「中央大學天文所Python使用者討論會」GitHub專案的issues頁面</a>
+              ，按"New issue"新增一個issue，標題請填"申請成為此專案的合作者", 內容填上你的GitHub帳號名稱後按"Submit new issue"送出issue。</li>
+            <li>等專案管理者把你加入到此專案的合作者名單後，你的GitHub帳號名稱就會列在"冒險者們"之中，此時你就完成加入冒險的步驟囉! 然後查閱關於如何升級和解開技能的規則，開始冒險吧!</li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+        </div>
+      </div>
+      <!-- end Modal content -->
+    </div>
+  </div>
+  <!-- end joinModal -->
+
+
+
+
+  <div class="jumbotron">
+    <h1 style="text-align: center;">IANCU Python Adventure</h1>
+    <p style="text-align: center;">-- 中央天文所的各位，一同騎乘蟒蛇冒險吧! --</p>
+  </div>
+
+  <div class="container">
+  <div class="row">
+    <div class="col-md-9">
+
+  <h1>待解任務</h1>
+  <div class="alert alert-info">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>升級機會!</strong> 加入解任務的行列，就有機會升級並且解開技能唷！</div>
+  <div class="panel-group" id="show-quests"></div>
+
+
+    </div>
+    <div class="col-md-3">
+      <h1>冒險者們</h1>
+      <ul class="list-group" id="adventurers-list"></ul>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- adventurerModal -->
+  <div id="adventurerModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">冒險者詳細資料</h4>
+        </div>
+        <div id="adventurerInfo" class="modal-body"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+        </div>
+      </div>
+      <!-- end Modal content -->
+    </div>
+  </div>
+  <!-- end adventurerModal -->
+
+</body>
+</html>
