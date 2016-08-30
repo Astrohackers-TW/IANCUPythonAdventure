@@ -1,14 +1,14 @@
 [
  {
-  "title": "建立常用IDL函式與Python的對照表",
-  "description": "為了幫助IDL使用者有效率地轉換到Python，我們將建立常用IDL函式與相應的Python函式對照表，先請IDL使用者在此文件中提供你們常用的IDL函式 (貼上函式名稱前，請先留意是否已經有人列過)，然後請大家陸續協助完善此jupyter notebook中的對照表"
+  "description": "為了幫助IDL使用者有效率地轉換到Python，我們將建立常用IDL函式與相應的Python函式對照表，先請IDL使用者在此文件( https://iancupythonmeetup.hackpad.com/IDLPython-94970CxO0EN )中提供你們常用的IDL函式 (貼上函式名稱前，請先留意是否已經有人列過)，然後請大家陸續協助完善此jupyter notebook ( https://github.com/Astrohackers-TW/IANCUPythonAdventure/blob/master/notebooks/notebooks4HowtoSeries/how_to_IDL2Python.ipynb )中的對照表",
+  "title": "建立常用IDL函式與Python的對照表"
  },
  {
-  "title": "在讀寫檔案的筆記中加入「刪除含有特定字串的資料列」的範例",
-  "description": "我們有時會發現要讀的檔案中有想要先過濾掉的資料， 該如何用Python找到符合特定型式的字串，並刪掉含有該字串的那整個資料列?"
+  "description": "我們有時會發現要讀的檔案中有想要先過濾掉的資料， 該如何用Python找到符合特定型式的字串，並刪掉含有該字串的那整個資料列?",
+  "title": "在讀寫檔案的筆記中加入「刪除含有特定字串的資料列」的範例"
  },
  {
-  "title": "將astropython-notes專案中的notebooks合併到此專案中",
-  "description": "我之前在astropython-notes這repository建了一個「Python在天文研究上的應用之系列文章」的專案，裡面有給Python初學者的教學筆記(IPython notebooks)，我想將那些notebooks合併到此專案中，並藉由討論會中初學Python的成員所分享的學習經驗，來修改那些notebooks (以初學者的角度來看需要刪掉或增加哪些內容)。"
+  "description": "我之前在astropython-notes這repository建了一個「Python在天文研究上的應用之系列文章」的專案，裡面有給Python初學者的教學筆記(IPython notebooks)，我想將那些notebooks合併到此專案中，並藉由討論會中初學Python的成員所分享的學習經驗，來修改那些notebooks (以初學者的角度來看需要刪掉或增加哪些內容)。",
+  "title": "將astropython-notes專案中的notebooks合併到此專案中"
  }
 ]
