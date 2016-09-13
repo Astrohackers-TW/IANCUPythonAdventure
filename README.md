@@ -12,6 +12,8 @@
 
 * [Facebook社團](https://www.facebook.com/groups/1022708484514663)
 
+* [IANCU Python Adventure 遊戲] (https://astrohackers-tw.github.io/IANCUPythonAdventure/) (尚在測試階段)
+
 * [Hackfoldr](http://hackfoldr.org/iancupythonmeetup)
 
 * [Hackpad](https://iancupythonmeetup.hackpad.com)
