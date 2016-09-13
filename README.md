@@ -4,7 +4,8 @@
 
 此repository存放中央大學天文所Python使用者討論會的相關筆記。
 
-## 討論會時間地點：每週二早上10點於914
+## 討論會時間地點
+每週二早上10點於914
 
 ## 討論會相關資訊彙整
 * [Wiki](https://github.com/Astrohackers-TW/IANCUPythonAdventure/wiki)
